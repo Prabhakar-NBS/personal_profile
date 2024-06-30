@@ -49,18 +49,30 @@ a {
 
 .skills {
     grid-column: span 2; /* Making the skills box span two columns */
-    width: 95%; /* Ensuring the skills box spans the full width */
-    margin-bottom: 20px;
+    width: 97%; /* Ensuring the skills box spans the full width */
+    margin-bottom: 35px;
     padding-top: 0px;
 }
 
 .skills p {
-    margin-bottom: 5px;
+    margin-bottom: 15px;
     text-align: justify;
 }
 
+.skills-heading {
+    text-decoration: underline;
+}
+
+
 .projects, .presentations, .education, .extracurricular {
     width: 90%; /* Ensuring consistent width for other boxes */
+}
+
+.presentations{
+    grid-column: span 2; /* Making the skills box span two columns */
+    /*width: 95%;  Ensuring the skills box spans the full width */
+    margin-bottom: 20px;
+    padding-top: 0px;
 }
 
 .presentations ol li {
@@ -71,7 +83,7 @@ a {
 
 .projects {
     grid-column: span 2; /* Making the skills box span two columns */
-    width: 95%; /* Ensuring the skills box spans the full width */
+    /*width: 95%;  Ensuring the skills box spans the full width */
     margin-bottom: 20px;
     padding-top: 0px;
 }
