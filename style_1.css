@@ -1,0 +1,83 @@
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+    color: black;
+    text-align: center;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.profile {
+    margin-bottom: 45px;
+}
+
+.profile-picture {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
+
+h1, h2 {
+    color: rgb(114, 1, 24);
+}
+
+a {
+    color: rgb(38, 0, 252);
+    text-decoration: none;
+}
+
+.details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-items: center;
+    align-items: start;
+}
+
+.box {
+    border: 2px solid rgb(69, 9, 159);
+    padding: 10px;
+    border-radius: 15px; /* Adding curved edges */
+    box-shadow: 10px 8px 8px rgba(112, 112, 112, 0.1); /* Optional: Adding a subtle shadow for better aesthetics */
+}
+
+.skills {
+    grid-column: span 2; /* Making the skills box span two columns */
+    width: 95%; /* Ensuring the skills box spans the full width */
+    margin-bottom: 20px;
+    padding-top: 0px;
+}
+
+.skills p {
+    margin-bottom: 5px;
+    text-align: justify;
+}
+
+.projects, .presentations, .education, .extracurricular {
+    width: 90%; /* Ensuring consistent width for other boxes */
+}
+
+.presentations ol li {
+    margin-bottom: 15px; /* Adding space between list items */
+    padding: 0px; /* Adding padding for better text alignment */
+    text-align: justify; /* Aligning text to the left */
+}
+
+.projects ol li {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.extracurricular p {
+    text-align: justify;
+}
+
+.education ol li {
+    text-align: justify;
+}
