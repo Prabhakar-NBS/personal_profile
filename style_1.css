@@ -6,21 +6,34 @@ body {
 }
 
 .container {
-    max-width: 900px;
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 0;
+}
+
+.left-column {
+    width: 25%;
     padding: 20px;
+    background-color: #fffce8;
+    border-right: 3px solid #3B3030;
+    position: fixed;
+    left: 00px;
+    height: 100%;
+    overflow-y: auto;
 }
 
 .profile {
-    margin-bottom: 45px;
+    margin-bottom: 0px;
 }
 
 .profile-picture {
     width: 220px;
     height: 220px;
     border-radius: 50%;
-    margin-bottom: 10px;
-    margin-top: 40px;
+    margin-bottom: 0px;
+    margin-top: 0px;
 }
 
 h1, h2 {
@@ -38,6 +51,9 @@ a {
     gap: 20px;
     justify-items: center;
     align-items: start;
+    margin-left: 23%;
+    width: 73%;
+    padding: 20px;
 }
 
 .box {
@@ -113,4 +129,32 @@ a {
 
 .education ol li {
     text-align: justify;
+}
+
+/* Table of contents (TOC) styles */
+.toc {
+    width: 17%;
+    position:fixed;
+    right: 17px;
+    top: 415px;
+    padding: 0px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-align: left; /* Align text to the left */
+}
+
+.toc p {
+    margin: 5px 0px; /* Add some margin for spacing */
+    padding: 0px 5px; /* Add padding for better alignment */
+}
+
+.toc a {
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+}
+
+.toc a:hover {
+    text-decoration: underline;
 }
