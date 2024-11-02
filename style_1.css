@@ -64,16 +64,18 @@ a {
     border-radius: 10px;
     margin-bottom: 20px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border: 2px solid rgb(69, 9, 159);
+    border-radius: 15px; 
+    box-shadow: 10px 8px 8px rgba(112, 112, 112, 0.1);
 }
 
-
+/*
 .box {
     border: 2px solid rgb(69, 9, 159);
-    padding: 10px;
-    border-radius: 15px; /* Adding curved edges */
-    box-shadow: 10px 8px 8px rgba(112, 112, 112, 0.1); /* Optional: Adding a subtle shadow for better aesthetics */
+    border-radius: 15px; 
+    box-shadow: 10px 8px 8px rgba(112, 112, 112, 0.1);
 }
-
+*/
 .skills {
     grid-column: span 2; /* Making the skills box span two columns */
     width: 97%; /* Ensuring the skills box spans the full width */
