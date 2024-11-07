@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     background-color: white;
     font-family: Arial, sans-serif;
@@ -7,7 +8,7 @@ body {
 
 .container {
     display: flex;
-    flex-direction: row;
+    /*flex-direction: row;*/
     max-width: 1200px;
     margin: 0 auto;
     padding: 0;
@@ -19,7 +20,7 @@ body {
     background-color: #fffce8;
     border-right: 3px solid #3B3030;
     border-left: 3px solid #ff9a9a;
-    position: fixed;
+    position:fixed;
     left: 10px;
     top: 10px;
     height: 100%;
@@ -55,7 +56,7 @@ a {
     gap: 20px;
     justify-items: center;
     align-items: start;
-    margin-left: 23%;
+    margin-left: 25%;
     width: 73%;
     padding: 20px;
 }
@@ -109,7 +110,7 @@ a {
 }
 
 
-.projects, .presentations, .education, .extracurricular {
+.presentations, .education, .extracurricular {
     width: 90%; /* Ensuring consistent width for other boxes */
 }
 
@@ -130,18 +131,21 @@ a {
     display: flex;
     gap: 550px;
     margin-top: 5px;
+
 }
 .project-links a {
     color: #007bff;
+    display: flex;
     text-decoration: none;
     font-size: 0.9em;
 }
 .project-links a:hover {
     text-decoration: underline;
+    display: flex;
 }
 
 .presentations{
-    grid-column: span 2; /* Making the skills box span two columns */
+    grid-column: span -9; /* Making the skills box span two columns */
     /*width: 95%;  Ensuring the skills box spans the full width */
     margin-bottom: 20px;
     padding-top: 0px;
@@ -154,8 +158,8 @@ a {
 }
 
 .projects {
-    grid-column: span 2; /* Making the skills box span two columns */
-    /*width: 95%;  Ensuring the skills box spans the full width */
+    grid-column: span 5; /* Making the skills box span two columns */
+    width: 90%;  /*Ensuring the skills box spans the full width */
     margin-bottom: 20px;
     padding-top: 0px;
 }
@@ -172,23 +176,76 @@ a {
 .education ol li {
     text-align: justify;
 }
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Stack layout for smaller screens */
+    .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    .left-column, .details {
+        width: 100%; /* Full width on mobile */
+        margin-left: 0;
+    }
+    
+    .left-column {
+        position: relative; /* Allow it to flow with the content */
+        padding-bottom: 20px; /* Add space below */
+    }
+    
+    .details {
+        display: block;
+        margin-top: 20px;
+    }
 
-/* Table of contents (TOC) styles */
+    .profile-picture {
+        width: 80px;
+        height: 80px;
+    }
+
+    .project-item h3 {
+        font-size: 1em;
+    }
+    
+    .skills {
+        width: 100%;
+    }
+
+    .project-links {
+        gap: 10px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    /* Tablet and small desktop layout */
+    .left-column {
+        width: 30%;
+    }
+    .details {
+        width: 65%;
+    }
+    .project-item h3 {
+        font-size: 1.05em;
+    }
+}
+
+/* Additional Sections */
 .toc {
     width: 17%;
-    position:fixed;
+    position: fixed;
     right: 17px;
     top: 415px;
-    padding: 0px;
+    padding: 0;
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #f9f9f9;
-    text-align: left; /* Align text to the left */
+    text-align: left;
 }
 
 .toc p {
-    margin: 5px 0px; /* Add some margin for spacing */
-    padding: 0px 5px; /* Add padding for better alignment */
+    margin: 5px 0;
+    padding: 0 5px;
 }
 
 .toc a {
