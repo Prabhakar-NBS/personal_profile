@@ -130,7 +130,8 @@ a {
 .project-links {
     display: flex;
     gap: 550px;
-    margin-top: 5px;
+    margin-top: 0px;
+    margin-right: 0px;
 
 }
 .project-links a {
@@ -213,20 +214,40 @@ a {
     }
 
     .project-links {
-        gap: 10px;
+        gap: 100px;
     }
 }
 
-@media (min-width: 769px) and (max-width: 1200px) {
+@media (min-width: 769px) and (max-width: 1024px) {
     /* Tablet and small desktop layout */
+    .container {
+        flex-direction: row; /* Use row direction to keep left and details side by side */
+        padding: 20px;
+        align-items: start; /* Align items at the top */
+    }
+
     .left-column {
-        width: 30%;
+        width: 25%;
+        margin-bottom: 0; /* Remove extra margin */
     }
+
     .details {
-        width: 65%;
+        width: 75%;
+        display: block; /* Ensure it occupies the remaining width */
+        padding-left: 37px; /* Optional: Add some padding for separation */
     }
+
+    .profile-picture {
+        width: 120px;
+        height: auto;
+    }
+
+    .project-links {
+        gap: 350px;
+    }
+
     .project-item h3 {
-        font-size: 1.05em;
+        font-size: 1.1em;
     }
 }
 
